@@ -1,0 +1,31 @@
+<footer>
+  <section id="footer_teasers_wrapper">
+       <div class="container">
+            <div class="row">
+                 <div class="footer_teaser col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2">
+                      <h3>About us</h3>
+                      <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+                      <p><i class="fa fa-map-marker"></i> 3 Athens street</p>
+                      <p><i class="fa fa-phone"></i> (+30) 265-9987</p>
+                      <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
+                      <p><i class="fa fa-envelope"></i> hello@restarttheme.com</p>
+                 </div>
+                 <div class="footer_teaser col-sm-4 col-md-4" id="latest-flickr-images">
+                      <h3>FlickrFeed</h3>
+                      <p>All photos © by <a href="http://www.dimitragiannouka.com" target="_blank">Dimitra Giannouka</a>.</p>
+                      <ul>
+                      </ul>
+                 </div>
+            </div>
+       </div>
+  </section>
+  <section class="copyright">
+       <div class="container">
+            <div class="row">
+                 <div class="text-right col-sm-12 col-md-12">Copyright ©2014 all rights reserved. Designed by <a href="http://www.leonart.gr">leonart</a> </div>
+            </div>
+       </div>
+  </section>
+</footer>
+
+
