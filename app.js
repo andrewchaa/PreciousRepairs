@@ -7,6 +7,7 @@ app.use(express.static(__dirname + "/public"));
 
 controllers.init(app);
 
-var server = app.listen("3000", function () {
+var port = process.env.port || 3000;
+var server = app.listen(port, function () {
     console.log("listening to port %d", server.address().port);
 })
