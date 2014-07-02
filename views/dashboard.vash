@@ -1,0 +1,63 @@
+@html.extend("layout", function (model) {
+
+     @html.block("main", function (model) {
+
+          <section class="hgroup">
+               <div class="container">
+                    <h1>Dashboard</h1>
+                    <h2>This is the <strong>collapsing header version</strong> of the about us page. The effect is achieved by assigning the "collapsing_header" class on the "body" tag. There is also the <a href="page_alternative.html">contained, plain style version</a></h2>
+                    <ul class="breadcrumb pull-right">
+                         <li><a href="index.html">Home</a> </li>
+                         <li class="active">About us</li>
+                    </ul>
+
+                    <p>User info</p>
+                    <ul>
+                         <li>@model.user.displayName</li>
+                    </ul>
+
+
+               </div>
+          </section>
+          <section class="article-text">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-sm-8 col-md-8">
+                              <p>Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augue elementum id. Quisque at lectus leo, nec placerat mi. Curabitur egestas eleifend interdum. Suspendisse potenti. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem. Suspendisse quis sem lorem, a euismod nisl. Nullam eget tortor purus, id molestie. </p>
+                              <p class="columns_2">In hac habitasse platea dictumst. In hac habitasse platea dictumst. Donec aliquet tellus enim, a tincidunt nulla. Praesent mollis felis at nulla fermentum mattis. Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augue elementum id. Quisque at lectus leo, nec placerat mi. Curabitur egestas eleifend interdum. Suspendisse potenti. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem. Suspendisse quis sem lorem, a euismod nisl. Nullam eget tortor purus, id molestie sapien.</p>
+                         </div>
+                         <div class="col-sm-4 col-md-4">
+                              <blockquote>
+                                   <p>In hac habitasse platea dictumst. Suspendisse non tellus ligula. Morbi molestie feugiat tortor a hendrerit. Ut suscipit, orci eget tristique varius, arcu nibh commodo nisl, a sagittis justo ipsum vel nulla. In semper est iaculis elit pellentesque volutpat. Aenean orci ante, auctor ut egestas ac, gravida non orci.</p>
+                                   <small>Someone famous in <cite title="Source Title">Source Title</cite></small> 
+                              </blockquote>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="call_to_action">
+               <div class="container"> 
+                    <img alt="responsive" src="images/star.png">
+                    <h3>give your creative ideas a boost</h3>
+                    <h4>mouse over our team photos to see a cool effect!</h4>
+               </div>
+          </section>
+
+     })
+
+     @html.block("footer", function (model) {
+          <footer>
+               <section class="copyright">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-sm-6 col-md-6"> Copyright ©2013 all rights reserved </div>
+                              <div class="text-right col-sm-6 col-md-6"> Designed by <a href="http://www.leonart.gr">leonart</a> </div>
+                         </div>
+                    </div>
+               </section>
+          </footer>
+     })
+     
+})
+
+

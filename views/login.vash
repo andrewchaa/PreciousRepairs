@@ -1,0 +1,51 @@
+@html.extend("layout", function (model) {
+  
+  @html.block("main", function (model) {
+
+
+  <section class="hgroup">
+    <div class="container">
+      <h1>Register or Sign in</h1>
+      <ul class="breadcrumb pull-right">
+        <li><a href="index.html">Home</a> </li>
+        <li class="active">Register of Sign in</li>
+      </ul>
+    </div>
+  </section>
+               
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+            <div class="signin">
+              <div class="social_sign"><h3>Sign in with your social account</h3><a class="fb" href="/auth/facebook"><i class="fa fa-facebook"></i></a></div>
+              <div class="or"><div class="or_l"></div><span>or</span><div class="or_r"></div></div>
+              
+              <p class="sign_title">Log in with your site account</p>
+              <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="form col-lg-8">
+                  <form>
+                    <input placeholder="Email" class="form-control" type="text">
+                    <input placeholder="Password" class="form-control" type="text">
+                    <div class="forgot">
+                      <div class="checkbox"><label class=""><input type="checkbox"> Remember me</label></div>
+                      <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div>
+
+    </div>
+  </section>
+
+
+  })
+
+})
+

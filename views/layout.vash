@@ -27,12 +27,12 @@
 <body>
 
 @html.include("header")
-@html.include("slider")
+@html.block("slider")
 
 <div class="main">
 
      @html.block("main")
-     @html.include("footer")     
+     @html.block("footer")     
 
 </div>
 

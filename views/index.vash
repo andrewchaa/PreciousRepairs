@@ -1,4 +1,8 @@
 @html.extend("layout", function (model) {
+     @html.block("slider", function (model) {
+          @html.include("slider")
+     })
+
      @html.block("main", function (model) {
          
      <section class="call_to_action">
@@ -80,5 +84,9 @@
      </section>
 
 
+     })
+
+     @html.block("footer", function (model) {
+          @html.include("footer")     
      })
 })

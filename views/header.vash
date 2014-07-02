@@ -21,7 +21,7 @@
                     </ul>
                </div>
           </div>
-          <div id="social_media_wrapper"><a href="#facebook"><i class="fa fa-facebook"></i></a></div>
+          <div id="social_media_wrapper"><a href="/auth/facebook"><i class="fa fa-facebook"></i></a></div>
           <div id="sign"><a href="register.html"><i class="fa fa-user"></i>Register/Sign in</a></div>
      </div>
 </header>
