@@ -2,8 +2,9 @@
 
     var passport = require("passport");
     var FacebookStrategy = require("passport-facebook").Strategy;
-    var FACEBOOK_APP_ID = '229739257235571';
-    var FACEBOOK_APP_SECRET = '7b36c85dd76ea320c94771ec32fbd74a';
+    var FACEBOOK_APP_ID = process.env.facebook_app_id || '229826147226882';
+    var FACEBOOK_APP_SECRET = process.env.facebook_app_secret || 'bcecf07add686af8e48ca4f2805f10b8';
+    var CALLBACK_URL = process.env.facebook_callback_url || "http://preciousrepairs.local:3000/auth/facebook/callback";
 
     passport.serializeUser(function (user, done) {
         done(null, user);
@@ -13,12 +14,11 @@
         done(null, obj);
     });
 
-    var callbackURL = process.env.facebook_callback_url || "http://preciousrepairs.local:3000/auth/facebook/callback";
     passport.use(new FacebookStrategy(
         {
             clientID : FACEBOOK_APP_ID,
             clientSecret : FACEBOOK_APP_SECRET,
-            callbackURL : callbackURL
+            callbackURL : CALLBACK_URL
         },
         function (accessToken, refreshToken, profile, done) {
             process.nextTick(function () {
@@ -44,6 +44,7 @@
             function (req, res) {
                 if (req.session.return_uri) {
                     res.redirect(req.session.return_uri);
+                    req.session.return_uri = '';
                 } else {
                     res.redirect('/');
                 }
