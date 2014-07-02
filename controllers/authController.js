@@ -13,11 +13,12 @@
         done(null, obj);
     });
 
+    var callbackURL = process.env.facebook_callback_url || "http://preciousrepairs.local:3000/auth/facebook/callback";
     passport.use(new FacebookStrategy(
         {
             clientID : FACEBOOK_APP_ID,
             clientSecret : FACEBOOK_APP_SECRET,
-            callbackURL : "http://preciousrepairs.local:3000/auth/facebook/callback"
+            callbackURL : callbackURL
         },
         function (accessToken, refreshToken, profile, done) {
             process.nextTick(function () {
